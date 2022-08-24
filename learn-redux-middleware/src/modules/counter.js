@@ -1,4 +1,4 @@
-import { createAction, handleAction } from "redux-actions";
+import { createAction, handleActions } from "redux-actions";
 
 const INCREASE = "counter/INCREASE";
 const DECREASE = "counter/DECREASE";
@@ -8,7 +8,7 @@ export const decrease = createAction(DECREASE);
 
 const initialState = 0; // 상태는 꼭 객체일 필요 없음. 숫자도 작동.
 
-const counter = handleAction(
+const counter = handleActions(
   {
     [INCREASE]: (state) => state + 1,
     [DECREASE]: (state) => state - 1,
