@@ -70,7 +70,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: {
-                exportOnlyLocals: true,
+                onlyLocals: true,
               },
             },
           },
@@ -81,7 +81,7 @@ module.exports = {
             options: {
               importLoaders: 1,
               modules: {
-                exportOnlyLocals: true,
+                onlyLocals: true,
                 getLocalIdent: getCSSModuleLocalIdent,
               },
             },
@@ -96,7 +96,7 @@ module.exports = {
                 options: {
                   importLoaders: 3,
                   modules: {
-                    exportOnlyLocals: true,
+                    onlyLocals: true,
                   },
                 },
               },
@@ -113,7 +113,7 @@ module.exports = {
                 options: {
                   importLoaders: 3,
                   modules: {
-                    exportOnlyLocals: true,
+                    onlyLocals: true,
                     getLocalIdent: getCSSModuleLocalIdent,
                   },
                 },
